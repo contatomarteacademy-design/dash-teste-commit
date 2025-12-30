@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import * as Avatar from '@radix-ui/react-avatar';
 import { useFinance } from '../contexts/FinanceContext';
@@ -11,7 +10,6 @@ interface SidebarProps {
 export function Sidebar({ isCollapsed, onToggle }: SidebarProps) {
   const location = useLocation();
   const { members } = useFinance();
-  const [isProfileOpen, setIsProfileOpen] = useState(false);
 
   if (!members) {
     return (

@@ -132,7 +132,6 @@ export function FinanceProvider({ children }: { children: ReactNode }) {
       categoryMap.set(t.category, current + t.value);
     });
 
-    const totalExpenses = summary.totalExpense || 1;
     const totalIncome = summary.totalIncome || 1;
 
     return Array.from(categoryMap.entries())

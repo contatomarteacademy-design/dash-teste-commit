@@ -19,10 +19,6 @@ export function CardsStack() {
     }
   };
 
-  const getUsagePercentage = (card: typeof cards[0]) => {
-    return Math.round((card.balance / card.limit) * 100);
-  };
-
   return (
     <div className="bg-white rounded-xl">
       <div className="flex items-center justify-between px-6 pt-6 pb-4">
@@ -38,7 +34,6 @@ export function CardsStack() {
       <div className="relative px-10 pb-8" style={{ minHeight: '400px' }}>
         {cards.map((card, index) => {
           const isSelected = selectedCard === card.id;
-          const usage = getUsagePercentage(card);
           const dueDate = new Date();
           dueDate.setDate(card.dueDay);
 

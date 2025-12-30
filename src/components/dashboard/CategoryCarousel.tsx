@@ -31,7 +31,7 @@ export function CategoryCarousel() {
   return (
     <div className="bg-white rounded-xl relative">
       <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide px-4 pt-6 relative">
-        {chartData.map((item, index) => (
+        {chartData.map((item) => (
           <div
             key={item.name}
             className="flex-shrink-0 w-[188px] bg-white border border-primary-gray-border rounded-xl p-8 flex flex-col items-center gap-3"

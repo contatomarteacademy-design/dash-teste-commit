@@ -4,7 +4,7 @@ import { formatDateShort } from '../../utils/format';
 import { isSameDayDate } from '../../utils/date';
 
 export function CalendarAgenda() {
-  const { transactions, markTransactionAsPaid } = useFinance();
+  const { transactions } = useFinance();
   const [selectedDate, setSelectedDate] = useState(new Date());
 
   // Get pending transactions for selected date
