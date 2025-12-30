@@ -23,5 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
+# MCP Config (contains sensitive tokens)
+mcp-config.json
 
 
